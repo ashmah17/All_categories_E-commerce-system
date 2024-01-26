@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Categories</title>
+    <link rel="stylesheet" href="./fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./all_categories.css">
+</head>
+<body>
+     <div class="sidebar" id="sidebar">
+        <div class="close_btn">
+             <img src="./dada.png" alt="">
+             <span id="icon_btn" onclick='toggleSidebar()'>&times;</span>
+        </div>
+
+          <ul class="menu">
+
+         <li class="list">
+             <a href="dashboard.php">
+                 <i class="fas fa-home"></i>
+                 <span>Dashboard</span>
+             </a>
+         </li>
+         
+         <li class="list">
+             <a href="data.php">
+                 <i class="fas fa-wifi"></i>
+                 <span>Data</span>
+             </a>
+         </li>
+
+         <li class="list">
+             <a href="airtime.php">
+                 <i class="fas fa-mobile"></i>
+                 <span>Airtime</span>
+             </a>
+         </li>
+
+         <li class="list">
+             <a href="cable.php">
+                 <i class="fas fa-tv"></i>
+                 <span>Cable</span>
+             </a>
+         </li>
+
+         <li class="list">
+             <a href="utility">
+                 <i class="fas fa-bolt"></i>
+                 <span>Utility</span>
+             </a>
+         </li>
+
+         <li class="list">
+             <a href="transaction.php">
+                 <i class="fas fa-receipt"></i>
+                 <span>Transactions</span>
+             </a>
+         </li>
+
+         <li class="list">
+             <a href="profil.php">
+                 <i class="fas fa-user"></i>
+                 <span>Referral</span>
+             </a>
+         </li>
+         
+         <li class="list" id="logout">
+             <a href="landing.php">
+                 <i class="fas fa-sign-out-alt"></i>
+                 <span>Log Out</span>
+             </a>
+         </li>
+
+         </ul>
+     </div>
+
+     <div class="main-content">
+
+        <!--********* HEADER SECTION ******-->
+
+        <div class="header-wrapper">
+
+            <div class="icon_box" >
+               <span id="icon_btn" onclick='toggleSidebar()'>&#9776;</span>
+            </div>
+
+             <div class="header-tittle">
+                 <h2>Dashboard</h2>
+             </div>
+            
+             <fieldset class="search-box">
+                <i class="fas fa-search" id="fa-search"></i>
+                <i class="fas fa-angle-left" id="fa-angle-left" onclick="hideSearch()"></i>
+               <input type="text" class="search_input" id="search_input" onkeyup="search()" placeholder="Search Items ">
+             </fieldset>
+           
+             <div class="add_to_chart">
+                <i class="fas fa-cart-shopping"></i>
+             </div>
+             <div class="user">
+                <i class="fas fa-user"></i>
+             </div>
+        </div>
+
+        <div class="search-result" id="search-result">
+
+            <div class="product_list" id="product_list" >            
+
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/chair.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Tubs</h2>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/chair.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Arm Tub</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/armless_chair.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Armless Tub</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/round_gold_tub.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Round Gold Bottom Tub</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/round_tub.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Round Tub</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- MIRROR -->
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/mirror.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Mirrors</h2>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/mirror.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Circle Mirror</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/circle_mirror.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Circle Dressing Mirror</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                    <!-- BAGS -->
+
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/baby_bag.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Bags</h2>
+                        </div>
+                    </div>
+                </a>              
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/allpurpose_bag.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>All Purpose Bag</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/hand_baby_bag.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Hand Baby Bag</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/travel_bag.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Travel Bag</h2>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/tote bag.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Tote Bag</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>     
+                    <!-- Chandelier          -->
+
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/bolb_chandelier.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Chandelier</h2>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/cement_chandelier.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Ceramic Chandelier</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/chandelier.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Fan Design Chandelier</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/hange_cement_chandelier.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Hang Chandelier</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/slide_lamp.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Lamps</h2>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/candle_lamp.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Candle Lamp</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/electric_lamp.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Electric Lamp</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+
+                    <!-- DRAWERS -->
+
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/chess_drawer.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Buffets</h2>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/buffet.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Wooden Buffet</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/mirror_buffet.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Wooden Mirror Buffet</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+                    <!-- SOFA -->
+
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/sofa.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Sofas</h2>
+                        </div>
+                    </div>
+                </a>              
+                
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/navy_sofa.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Mid Century Sofa</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                <a href="mirrors.html">
+                    <div class="product" id="product">
+                    <div class="img">  <img src="./images/green_sofa.jpg" alt=""></div>
+                        <div class="p-details">
+                            <h2>Lawson Sofa</h2>
+                            <h3 class="p-price"> $500</h3>
+                        </div>
+                    </div>
+                </a>              
+                
+            </div>
+
+        </div>
+
+        <div class="container" id="container">
+                
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+                <!-- <a href="payment.html">
+                    <button>Add-to-cart</button>
+                </a> -->
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+                <!-- <a href="payment.html">
+                    <button>Add-to-cart</button>
+                </a> -->
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+                <!-- <a href="payment.html">
+                    <button>Add-to-cart</button>
+                </a> -->
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+              
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+                <!-- <a href="payment.html">
+                    <button>Add-to-cart</button>
+                </a> -->
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+                <!-- <a href="payment.html">
+                    <button>Add-to-cart</button>
+                </a> -->
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+                <!-- <a href="payment.html">
+                    <button>Add-to-cart</button>
+                </a> -->
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+           <a href="">
+            <div class="cards" id="cards">
+    
+                <div class="image">
+                    <img src="./images/baby_bag.jpg" width="100px" height="100px" alt="">
+                </div>
+
+                <div class="price">
+                    <h2>&#8358;231,913</h2>
+                    <h5><s>&#8358;463,826</s></h5>
+                </div>
+    
+                <h4 id="product_name">hp laptop</h4>
+                <div class="delivery">
+                    <i class="fas fa-truck"></i>
+                    <p>free shipping over &#8358;8,260</p>
+                </div>
+    
+               
+    
+                
+                <!-- <a href="payment.html">
+                    <button>Add-to-cart</button>
+                </a> -->
+                
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                     <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            
+            </div>
+           </a>
+    
+          
+           
+        </div>
+     </div>
+
+    
+    
+     <script src="all_categories.js"></script>
+</body>
+</html>
